@@ -17,21 +17,17 @@ if (!isWebGLAvailable()) {
 }
 
 
-let j = 0;
+let j = 1;
 let sr = ["https://player.vimeo.com/video/215984568?h=9eee30734f", "https://player.vimeo.com/video/215984159?h=225b211749", "https://player.vimeo.com/video/215988274?h=436e63755f", "https://player.vimeo.com/video/215985972?h=b8fec9038b"]
 
-document.onkeyup = (e) => {
-  e = e || window.event;
-
-  if (e.key === " ") {
-    document.getElementById("player").src = sr[j]
+document.getElementById("change").addEventListener("click", () => {
+  document.getElementById("player").src = sr[j]
     if (j == sr.length-1) {
       j = 0;
     } else {
       j++;
     }
-  }
-}
+})
 
 const bg = document.getElementById("background");
 

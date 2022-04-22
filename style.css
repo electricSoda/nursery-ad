@@ -100,3 +100,22 @@ animation: in-out 4s ease forwards;
 	height: 100%;
 	opacity: 1;
 }
+
+#change {
+	position: absolute;
+	bottom: 25%;
+	font-size: 30px;
+	background: white;
+	color: dodgerblue;
+	padding: 5px;
+	border-radius: 5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black;
+}
+
+#change:hover {
+	background: rgb(200, 200, 200);
+	cursor: pointer;
+	transform: scale(1.2, 1.2);
+}
