@@ -1,0 +1,102 @@
+body {
+padding: 0;
+margin: 0;
+}
+
+#intro {
+z-index: 2;
+}
+
+#background {
+width: 100%;
+height: 100%;
+background: url("./imgs/lion.jpg") no-repeat center center fixed;
+position: absolute;
+top: 0;
+left: 0;
+background-size: cover;
+-webkit-background-size: cover;
+}
+
+#container {
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-weight: 300;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+font-family: "Righteous", sans-serif, Arial;
+}
+
+#header {
+opacity: 0;
+font-size: 15vh;
+padding: 10px;
+border-radius: 5px;
+}
+
+.corner {
+font-size: 1.5vh;
+position: absolute;
+color: white;
+left: 0;
+bottom: 1vh;
+font-family: Arial;
+}
+
+#again {
+color: black;
+}
+
+#text {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: absolute;
+font-family: Arial;
+font-weight: bold;
+width: 75vh;
+height: 45vh;
+font-size: 5vh;
+}
+
+.in-out {
+animation: in-out 4s ease forwards;
+}
+
+@keyframes in-out {
+0% {
+	transform: translateY(-50px);
+	opacity: 0;
+}
+50% {
+	transform: translateY(0px);
+	color: maroon;
+	opacity: 1;
+}
+80% {
+	transform: translateY(0px);
+	color: #330000;
+	opacity: 1;
+}
+100% {
+	transform: translateY(-50px);
+	opacity: 0;
+}
+}
+
+#vid {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
