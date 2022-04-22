@@ -103,7 +103,7 @@ animation: in-out 4s ease forwards;
 
 #change {
 	position: absolute;
-	bottom: 25%;
+	bottom: 5%;
 	font-size: 30px;
 	background: white;
 	color: dodgerblue;
